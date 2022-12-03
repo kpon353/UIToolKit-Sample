@@ -1,13 +1,14 @@
+// 参考URL:
+// https://forum.unity.com/threads/property-drawers.595369/#post-5118800
+
 #if UNITY_EDITOR
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor;
 using UnityEditor.UIElements;
 
-[CustomEditor(typeof(SampleComponent))]
-public class SampleComponentEditor : Editor
+[CustomEditor(typeof(Object), true, isFallback = true)]
+public class DefaultEditor : Editor
 {
   public override VisualElement CreateInspectorGUI()
   {
