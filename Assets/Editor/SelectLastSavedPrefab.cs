@@ -6,6 +6,11 @@ public class SelectLastSavedPrefab
 {
   private const string SavePrefabKey = "save_prefab_key";
 
+  /// <summary>
+  /// Prefabの参照のロード
+  /// mac: Shift + Option + P
+  /// windows: Shift + Alt + P
+  /// </summary>
   [MenuItem("SavePrefabPath/LoadAsset #&p")]
   private static void SelectLastSelectPrefab()
   {
@@ -22,6 +27,11 @@ public class SelectLastSavedPrefab
     }
   }
 
+  /// <summary>
+  /// Prefabの参照の保存
+  /// mac: Shift + Option + L
+  /// windows: Shift + Alt + L
+  /// </summary>
   [MenuItem("SavePrefabPath/LoadAsset #&l")]
   private static void SaveLastSelectPrefab()
   {
